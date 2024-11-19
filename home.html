@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepairWise</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .hero-section {
+            background: url(https://www.myperfectresume.com/wp-content/uploads/2020/09/how-to-become-an-auto-mechanic.jpg) center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section h1 {
+            font-size: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1200px;
+            margin-bottom:50px;
+        }
+
+        .image-gallery .gallery-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-gallery .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery-item h3 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"> RepairWise</div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="review.html">Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>Welcome to  RepairWise</h1>
+    </section>
+
+    <section class="image-gallery">
+        <div class="gallery-item">
+            <a href="car.html"><img src="https://th.bing.com/th/id/R.3fea7cbdbfed09fbc5d967b2f94c3e9e?rik=LEKoScy6KSK3UQ&riu=http%3a%2f%2fwww.carblogindia.com%2fwp-content%2fuploads%2f2015%2f04%2f2015-tata-nano-genx-pics-front-side.jpg&ehk=7lexyz5j0iVVnoNtw%2fvHn5qiwyhpRSrR9CXO5ZYH6A0%3d&risl=&pid=ImgRaw&r=0"></a>
+            <h3>Car</h3>
+        </div>
+        <div class="gallery-item">
+            <a href="bike.html"><img src="https://www.rushlane.com/wp-content/uploads/2022/07/yamaha-rx100-india-launch-confirmed-1068x601.jpg"></a>
+            <h3>Bike</h3>
+        </div>
+        <div class="gallery-item">
+            <a href="auto.html"><img src="https://e7.pngegg.com/pngimages/362/961/png-clipart-bajaj-tricycle-vehicle-transportation.png"></a>
+            <h3>Auto</h3>
+        </div>
+        <div class="gallery-item">
+            <a href="truck.html"><img src="https://gaadiwaadi.com/wp-content/uploads/2021/06/mahindra-bolero-pickup-truck.jpg"></a>
+            <h3>Truck</h3>
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024  RepairWise Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

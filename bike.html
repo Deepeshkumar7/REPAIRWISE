@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Repair Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color:  #91a8b4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-caption {
+            margin-top: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        .cta-button {
+            padding: 8px 16px;
+            background-color:#3a7ca5;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            transition:0.3s;
+            position: relative;
+            margin-top: 30px;
+        }
+        .cta-button:hover {
+            background-color:#f9844a; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bike Repair Services</h1>
+
+    <div class="image-grid">
+        <div class="image-item">
+            <a href="form.html"> <img src="https://th.bing.com/th/id/OIP.TX_93uLIhKw8cMz6srUv9wAAAA?rs=1&pid=ImgDetMain"></a>
+            <div class="image-caption"> Tire Punctures and Blowouts</div>
+        </div>
+        <div class="image-item">
+            <a href="form.html"> <img src="https://i.pinimg.com/originals/9d/58/5f/9d585fa21e8d75daf12f6160442fd9f3.png"></a>
+            <div class="image-caption">Brake Failures</div>
+        </div>
+        <div class="image-item">
+            <a href="form.html"> <img src="https://i2.wp.com/raybarmotorcycles.com/blog/wp-content/uploads/2018/09/MB-01.jpg?resize=500%2C330&ssl=1"></a>
+            <div class="image-caption">Poor Gear Shifting</div>
+        </div>
+        <div class="image-item">
+            <a href="form.html"> <img src="https://cdn.partzilla.com/media/why-adjust-motorcycle-chain_1.jpg"></a>
+            <div class="image-caption">Chain Wear and Breakage</div>
+        </div>
+        <div class="image-item">
+            <a href="form.html">  <img src="https://th.bing.com/th/id/OIP.gL0I_iZLJbz8Qj7ruWuucwHaE8?rs=1&pid=ImgDetMain"></a>
+            <div class="image-caption">Suspension Malfunctions</div>
+        </div>
+        <div class="image-item">
+            <a href="form.html"><img src="https://blog.bikernet.com/wp-content/uploads/2021/03/electric-batteries-standard.jpg"></a>
+            <div class="image-caption">Battery and Electrical Issues</div>
+        </div>
+    </div>
+    </div>
+        <a href="home.html" class="cta-button">Go Back</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews | Auto Repair Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#91a8b4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color:#fff;
+        }
+        .reviews {
+            margin-top: 20px;
+        }
+        .review-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .review-card h3 {
+            margin: 0;
+            color: #333;
+            font-size: 1.1em;
+        }
+        .review-card p {
+            color: #555;
+        }
+        .review-form {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .review-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .review-form input[type="text"], 
+        .review-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .review-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .review-form button:hover {
+            background-color: #555;
+        }
+        .thank-you-message {
+            color: #28a745;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+        .cta-button {
+            padding: 8px 16px;
+            background-color:#3a7ca5;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .cta-button:hover {
+            background-color:#f9844a; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Customer Reviews</h1>
+        <p>See what our customers are saying about us!</p>
+    </header>
+
+    <section class="container">
+        <h2>Reviews</h2>
+        <div class="reviews">
+            <div class="review-card">
+                <h3>Hari</h3>
+                <p>"Great service! They fixed my brakes quickly and at a reasonable price. Highly recommended!"</p>
+            </div>
+            <div class="review-card">
+                <h3>Vishnu</h3>
+                <p>"Friendly staff and excellent customer service. My car runs like new again."</p>
+            </div>
+            <div class="review-card">
+                <h3>Navadeep</h3>
+                <p>"I appreciate the honesty and transparency with pricing. No surprises, just great work!"</p>
+            </div>
+        </div>
+
+        <h2>Leave a Review</h2>
+        <div class="review-form">
+            <form id="reviewForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="review">Your Review</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+                
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+
+        <div class="thank-you-message" id="thankYouMessage">
+            Thank you for your review! We appreciate your feedback.
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form submission
+            
+            // Show thank you message
+            document.getElementById('thankYouMessage').style.display = 'block';
+            
+            // Clear the form
+            document.getElementById('name').value = '';
+            document.getElementById('review').value = '';
+        });
+    </script>
+     </div>
+     <a href="home.html" class="cta-button">Go Back</a>
+    </div>
+
+
+</body>
+</html>
